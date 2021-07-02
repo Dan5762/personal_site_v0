@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:animated_background/animated_background.dart';
 
 import 'package:personal_site/widgets/myappbar.dart';
+import 'package:personal_site/widgets/text_widgets.dart';
 
 class IndexPage extends StatefulWidget {
 
@@ -42,7 +43,62 @@ class _IndexPageState extends State<IndexPage> with TickerProviderStateMixin {
           paint: particlePaint,
         ),
         vsync: this,
-        child: Container(),
+        child: Container(
+          padding: const EdgeInsets.all(32),
+          child: LayoutBuilder(
+            builder: (BuildContext context, BoxConstraints constraints) {
+              return Row(
+                mainAxisAlignment: MainAxisAlignment.start,
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Expanded(
+                    child: Column(
+                      children: [
+                        titleText("Hi there"),
+                        bodyText("Welcome to my corner of the interweb"),
+                        SizedBox(
+                          height: 50
+                        ),
+                        headerText("My Latest Tinkerations"),
+                        bodyText("I'm currently working on a few different projects, here's an evolving list:"),
+                        SizedBox(
+                          height: 20
+                        ),
+                        linkedListText([
+                          {
+                            "title": "CleanPlate",
+                            "description": "A non-profit called CleanPlate",
+                            "link": "https://www.cleanplate.org.uk/"
+                          },
+                          {
+                            "title": "Mathematical Notes",
+                            "description": "A set of mathematical notes on topics from probability to group theory",
+                            "link": "https://github.com/Dan5762/Mathematics"},
+                          {
+                            "title": "Othello",
+                            "description": "An online version of othello with several reinforcement learning algorithms showcased as possible opponents",
+                            "link": "https://github.com/Dan5762/Othello"},
+                        ]),
+                      ],
+                    ),
+                  ),
+                  Expanded(
+                    child: Align(
+                      alignment: Alignment.topRight,
+                      child: Container(
+                        child: Image.asset(
+                          'images/pepper_pose.png',
+                          width: constraints.maxWidth / 4,
+                          fit: BoxFit.cover,
+                        ),
+                      ),
+                    ),
+                  ),
+                ],
+              );
+            }
+          ),
+        ),
       ),
     );
   }

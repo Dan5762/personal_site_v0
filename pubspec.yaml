@@ -25,3 +25,19 @@ flutter:
 
   assets:
     - images/
+
+  fonts:
+    - family: SourceSansPro
+      fonts:
+        - asset: fonts/Source_Sans_Pro/SourceSansPro-Black.ttf
+        - asset: fonts/Source_Sans_Pro/SourceSansPro-BlackItalic.ttf
+        - asset: fonts/Source_Sans_Pro/SourceSansPro-Bold.ttf
+        - asset: fonts/Source_Sans_Pro/SourceSansPro-BoldItalic.ttf
+        - asset: fonts/Source_Sans_Pro/SourceSansPro-ExtraLight.ttf
+        - asset: fonts/Source_Sans_Pro/SourceSansPro-ExtraLightItalic.ttf
+        - asset: fonts/Source_Sans_Pro/SourceSansPro-Italic.ttf
+        - asset: fonts/Source_Sans_Pro/SourceSansPro-Light.ttf
+        - asset: fonts/Source_Sans_Pro/SourceSansPro-LightItalic.ttf
+        - asset: fonts/Source_Sans_Pro/SourceSansPro-Regular.ttf
+        - asset: fonts/Source_Sans_Pro/SourceSansPro-SemiBold.ttf
+        - asset: fonts/Source_Sans_Pro/SourceSansPro-SemiBoldItalic.ttf

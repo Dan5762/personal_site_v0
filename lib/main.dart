@@ -15,6 +15,7 @@ class MyApp extends StatelessWidget {
       title: 'A Work in Progress',
       theme: ThemeData(
         primarySwatch: Colors.blueGrey,
+        fontFamily: 'SourceSansPro'
       ),
       initialRoute: '/',
       routes: {
