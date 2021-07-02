@@ -5,8 +5,8 @@ const CACHE_NAME = 'flutter-app-cache';
 const RESOURCES = {
   "favicon.png": "5dcef449791fa27946b3d35ad8803796",
 "main.dart.js": "b85ad0915f8c7584b2f16908c8ebc1f5",
-"index.html": "c62010e84ecf213514db09fc5dbc11f8",
-"/": "c62010e84ecf213514db09fc5dbc11f8",
+"index.html": "e1488863c77edbb3c29c784413b20321",
+"/": "e1488863c77edbb3c29c784413b20321",
 "manifest.json": "988841e96e5a0f55389c04278a6d0312",
 "assets/packages/cupertino_icons/assets/CupertinoIcons.ttf": "6d342eb68f170c97609e9da345464e5e",
 "assets/packages/font_awesome_flutter/lib/fonts/fa-brands-400.ttf": "3241d1d9c15448a4da96df05f3292ffe",
@@ -15,7 +15,11 @@ const RESOURCES = {
 "assets/NOTICES": "3772c3d2409cefd36c55dcaba38f54a1",
 "assets/FontManifest.json": "5a32d4310a6f5d9a6b651e75ba0d7372",
 "assets/fonts/MaterialIcons-Regular.otf": "4e6447691c9509f7acdbf8a931a85ca1",
-"assets/AssetManifest.json": "801125fca546f506babac9af4ec061ba",
+"assets/assets/images/red_cluster.png": "ca352cccc9744f064f141905b562b6ad",
+"assets/assets/images/black_dot.png": "f5a99fa248fbd6e5a296c506b0e4aa6f",
+"assets/assets/images/pepper_pose.JPG": "2c0bcb5da122f567838e92f5d156e8e2",
+"assets/assets/images/shoulders_pose.jpeg": "5e3558334e4c91f927ccaf23b1d15b8c",
+"assets/AssetManifest.json": "a1c2030379664f9a365f654e10e5b298",
 "version.json": "4b65d2b4b36671b8c3a4432eccf87272",
 "icons/Icon-192.png": "ac9a721a12bbc803b44f645561ecb1e1",
 "icons/Icon-512.png": "96e752610906ba2a93c65f8abe1645f1"
