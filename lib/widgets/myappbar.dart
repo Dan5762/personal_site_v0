@@ -43,6 +43,10 @@ class MyAppBar extends StatelessWidget implements PreferredSizeWidget {
           icon: FaIcon(FontAwesomeIcons.linkedin),
           onPressed: () => launch('https://www.linkedin.com/in/daniel-long-724b21171/'),
         ),
+        IconButton(
+          icon: FaIcon(FontAwesomeIcons.goodreads),
+          onPressed: () => launch('https://www.goodreads.com/user/show/91441433-daniel-long'),
+        ),
       ],
     );
   }

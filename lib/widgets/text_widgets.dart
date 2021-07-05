@@ -56,7 +56,7 @@ Widget linkedListText(listElements) {
                   listElement['title'],
                   style: TextStyle(
                     fontWeight: FontWeight.bold,
-                    fontSize: 32,
+                    fontSize: 28,
                   ),
                 ),
               ),
