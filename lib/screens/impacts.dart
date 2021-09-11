@@ -115,21 +115,6 @@ class _ImpactsPageState extends State<ImpactsPage> with TickerProviderStateMixin
                     "link": ""
                   },
                 ]),
-                SizedBox(height: 20),
-                titleText("Thoughts that stuck around"),
-                SizedBox(height: 20),
-                linkedListText([
-                  {
-                    "title": "Thinking in Terms of Representations",
-                    "description": "I find the potentially more tractable approach to understanding intelligence of viewing it as a compression challenge very appealing",
-                    "link": "https://en.wikipedia.org/wiki/Hutter_Prize"
-                  },
-                  {
-                    "title": "Beauty in Simplicity and Abstraction",
-                    "description": "Can all complex structures be represented to demonstrate the simplicity inside their complexity? Maybe our intuitions and design lead us to overlook certain symmetries",
-                    "link": ""
-                  }
-                ]),
               ],
             ),
           ),
