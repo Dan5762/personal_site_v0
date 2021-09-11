@@ -22,12 +22,27 @@ class MyAppBar extends StatelessWidget implements PreferredSizeWidget {
       actions: <Widget>[
         TextButton(
           onPressed: () {
-            Navigator.pushReplacementNamed(context, '/about');
+            Navigator.pushReplacementNamed(context, '/background');
           },
           child: Padding(
             padding: EdgeInsets.symmetric(horizontal: 12),
             child: Text(
-              "About", 
+              "Background",
+              style: TextStyle(
+                color: Colors.white,
+                fontSize: 24,
+              )
+            ),
+          ),
+        ),
+        TextButton(
+          onPressed: () {
+            Navigator.pushReplacementNamed(context, '/impacts');
+          },
+          child: Padding(
+            padding: EdgeInsets.symmetric(horizontal: 12),
+            child: Text(
+              "Impacts",
               style: TextStyle(
                 color: Colors.white,
                 fontSize: 24,

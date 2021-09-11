@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 
 import 'package:personal_site/screens/index.dart';
-import 'package:personal_site/screens/about.dart';
+import 'package:personal_site/screens/impacts.dart';
+import 'package:personal_site/screens/background.dart';
 
 void main() {
   runApp(MyApp());
@@ -20,7 +21,8 @@ class MyApp extends StatelessWidget {
       initialRoute: '/',
       routes: {
         '/': (context) => IndexPage(),
-        '/about': (context) => AboutPage()
+        '/impacts': (context) => ImpactsPage(),
+        '/background': (context) => BackgroundPage()
       },
     );
   }

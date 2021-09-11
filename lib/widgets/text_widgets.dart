@@ -50,29 +50,31 @@ Widget linkedListText(listElements) {
           padding: EdgeInsets.all(8),
           child: Column(
             children: [
-              Align(
-                alignment: Alignment.centerLeft,
-                child: Text(
-                  listElement['title'],
-                  style: TextStyle(
-                    fontWeight: FontWeight.bold,
-                    fontSize: 28,
+              if (listElement['title'] != "")
+                Align(
+                  alignment: Alignment.centerLeft,
+                  child: Text(
+                    listElement['title'],
+                    style: TextStyle(
+                      fontWeight: FontWeight.bold,
+                      fontSize: 28,
+                    ),
                   ),
                 ),
-              ),
-              Align(
-                alignment: Alignment.centerLeft,
-                child: Text(
-                  listElement['description'],
-                  style: TextStyle(
-                    fontSize: 24,
+              if (listElement['description'] != "")
+                Align(
+                  alignment: Alignment.centerLeft,
+                  child: Text(
+                    listElement['description'],
+                    style: TextStyle(
+                      fontSize: 24,
+                    ),
                   ),
                 ),
-              ),
             ],
           ),
         ),
-        onTap: () => launch(listElement['link']),
+        onTap: () => Uri.parse(listElement['link']).isAbsolute ? launch(listElement['link']) : {},
       )
     );
   }

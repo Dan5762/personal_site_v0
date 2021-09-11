@@ -55,10 +55,10 @@ class _IndexPageState extends State<IndexPage> with TickerProviderStateMixin {
                     Expanded(
                       child: Column(
                         children: [
-                          titleText("Hi there"),
-                          bodyText("Welcome to my corner of the internet"),
-                          SizedBox(height: 50),
-                          headerText("Latest Tinkerations"),
+                          titleText("Welcome to my corner of the internet"),
+                          bodyText("I'm currently studying a masters in physics however my interests extend beyond physics, as this site may indicate. I'm planning on using the site to showcase my projects (and to encourage me to get them into a presentable state)."),
+                          SizedBox(height: 20),
+                          headerText("Latest Projects"),
                           bodyText("I'm currently working on a few different projects, here's an evolving list:"),
                           SizedBox(height: 20),
                           linkedListText([
@@ -68,52 +68,18 @@ class _IndexPageState extends State<IndexPage> with TickerProviderStateMixin {
                               "link": "https://www.cleanplate.org.uk/"
                             },
                             {
-                              "title": "Mathematical Notes",
-                              "description": "A set of mathematical notes on topics from probability to group theory",
-                              "link": "https://github.com/Dan5762/Mathematics"},
+                              "title": "fork",
+                              "description": "A simple app for tuning musical instruments",
+                              "link": "https://github.com/Dan5762/fork"
+                            },
                             {
                               "title": "Othello",
                               "description": "An online version of othello with several reinforcement learning algorithms showcased as possible opponents",
-                              "link": "https://github.com/Dan5762/Othello"},
+                              "link": "https://github.com/Dan5762/Othello"
+                            },
                           ]),
-                          SizedBox(height: 50),
-                          headerText("Interesting Thinking"),
                           SizedBox(height: 20),
-                          linkedListText([
-                            {
-                              "title": "Beauty in Simplicity and Abstraction",
-                              "description": "Can all complex structures be represented to demonstrate the simplicity inside their complexity? Maybe our intuitions and design lead us to overlook certain symmetries",
-                              "link": ""
-                            },
-                            {
-                              "title": "Thinking in Terms of Representations",
-                              "description": "I find the potentially more tractable approach to understanding intelligence of viewing it as a compression challenge very appealing",
-                              "link": "https://en.wikipedia.org/wiki/Hutter_Prize"
-                            }
-                          ]),
-                          SizedBox(height: 50),
-                          headerText("Impactful Reading"),
-                          SizedBox(height: 20),
-                          linkedListText([
-                            {
-                              "title": "The Metamorphosis of Prime Intellect",
-                              "description": "Definitely a strange and unique book. Even if you can't accept intelligence arising"
-                              " from associations and our current laws of physics getting a siginificant overhaul then the book will"
-                              " leave your mind at least a little blown and your sense of reality a little askew.",
-                              "link": "http://localroger.com/prime-intellect/"
-                            },
-                            {
-                              "title": "Imperium",
-                              "description": "It's hard to convincingly capture a man living 2000 years ago at the heart of the Roman"
-                              " Empire, however for me Robert Harris achieves just that in this trilogy",
-                              "link": "https://en.wikipedia.org/wiki/Imperium_(Harris_novel)"
-                            },
-                            {
-                              "title": "Human Traces",
-                              "description": "A touching book that takes you on an emotional and intellectual joruney",
-                              "link": "https://en.wikipedia.org/wiki/Human_Traces"
-                            }
-                          ]),
+                          bodyText("If any of these projects catch your interest feel free to get in contact, whether you're keen to get involved or if you simply have a comment to make."),
                         ],
                       ),
                     ),
