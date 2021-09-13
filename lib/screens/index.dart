@@ -46,60 +46,58 @@ class _IndexPageState extends State<IndexPage> with TickerProviderStateMixin {
         child: SingleChildScrollView(
           child: Container(
             padding: const EdgeInsets.all(32),
-            child: LayoutBuilder(
-              builder: (BuildContext context, BoxConstraints constraints) {
-                return Row(
-                  mainAxisAlignment: MainAxisAlignment.start,
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Expanded(
-                      child: Column(
-                        children: [
-                          titleText("Welcome to my corner of the internet"),
-                          bodyText("I'm currently studying a masters in physics however my interests extend beyond physics, as this site may indicate. I'm planning on using the site to showcase my projects (and to encourage me to get them into a presentable state)."),
-                          SizedBox(height: 20),
-                          headerText("Latest Projects"),
-                          bodyText("I'm currently working on a few different projects, here's an evolving list:"),
-                          SizedBox(height: 20),
-                          linkedListText([
-                            {
-                              "title": "CleanPlate",
-                              "description": "A non-profit called CleanPlate",
-                              "link": "https://www.cleanplate.org.uk/"
-                            },
-                            {
-                              "title": "fork",
-                              "description": "A simple app for tuning musical instruments",
-                              "link": "https://github.com/Dan5762/fork"
-                            },
-                            {
-                              "title": "Othello",
-                              "description": "An online version of othello with several reinforcement learning algorithms showcased as possible opponents",
-                              "link": "https://github.com/Dan5762/Othello"
-                            },
-                          ]),
-                          SizedBox(height: 20),
-                          bodyText("If any of these projects catch your interest feel free to get in contact, whether you're keen to get involved or if you simply have a comment to make."),
-                        ],
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.start,
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Expanded(
+                  flex: 2,
+                  child: Column(
+                    children: [
+                      titleText("Welcome to my corner of the internet"),
+                      bodyText("I'm currently studying a masters in physics however my interests extend beyond physics, as this site may indicate. I'm planning on using the site to showcase my projects (and to encourage me to get them into a presentable state)."),
+                      SizedBox(height: 20),
+                      headerText("Latest Projects"),
+                      bodyText("I'm currently working on a few different projects, here's an evolving list:"),
+                      SizedBox(height: 20),
+                      linkedListText([
+                        {
+                          "title": "CleanPlate",
+                          "description": "A non-profit called CleanPlate",
+                          "link": "https://www.cleanplate.org.uk/"
+                        },
+                        {
+                          "title": "fork",
+                          "description": "A simple app for tuning musical instruments",
+                          "link": "https://github.com/Dan5762/fork"
+                        },
+                        {
+                          "title": "Othello",
+                          "description": "An online version of othello with several reinforcement learning algorithms showcased as possible opponents",
+                          "link": "https://github.com/Dan5762/Othello"
+                        },
+                      ]),
+                      SizedBox(height: 20),
+                      bodyText("If any of these projects catch your interest feel free to get in contact, whether you're keen to get involved or simply have a comment to make."),
+                    ],
+                  ),
+                ),
+                Expanded(
+                  flex: 1,
+                  child: Align(
+                    alignment: Alignment.topRight,
+                    child: Container(
+                      padding: const EdgeInsets.all(10),
+                      child: Image.asset(
+                        'images/boat_view.jpeg',
+                        fit: BoxFit.cover,
                       ),
                     ),
-                    Expanded(
-                      child: Align(
-                        alignment: Alignment.topRight,
-                        child: Container(
-                          child: Image.asset(
-                            'images/pepper_pose.png',
-                            width: constraints.maxWidth / 4,
-                            fit: BoxFit.cover,
-                          ),
-                        ),
-                      ),
-                    ),
-                  ],
-                );
-              }
+                  ),
+                ),
+              ],
             ),
-          ),
+          )
         ),
       ),
     );

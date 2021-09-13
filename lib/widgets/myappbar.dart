@@ -12,7 +12,18 @@ class MyAppBar extends StatelessWidget implements PreferredSizeWidget {
   @override
   Widget build(BuildContext context) {
     return AppBar(
-      title: Text('Daniel Long'),
+      title: TextButton(
+        onPressed: () {
+          Navigator.pushReplacementNamed(context, '/');
+        },
+        child: Text(
+          'Daniel Long',
+          style: TextStyle(
+            fontSize: 24,
+            color: Colors.white
+          )
+        ),
+      ),
       leading: IconButton(
         icon: Icon(Icons.home),
         onPressed: () {
